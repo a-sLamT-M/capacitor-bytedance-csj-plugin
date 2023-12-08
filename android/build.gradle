@@ -54,8 +54,6 @@ repositories {
 
 dependencies {
     implementation 'com.pangle.cn:ads-sdk-pro:5.7.0.6'
-    // lombok
-
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':capacitor-android')
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
