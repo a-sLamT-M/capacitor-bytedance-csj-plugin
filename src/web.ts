@@ -1,4 +1,4 @@
-import {BytedanceAdPlugin, Config, Result} from "./definitions";
+import {BytedanceAdPlugin, Config, Result, RewardVideoAdOptions, SplashAdOptions} from "./definitions";
 import {WebPlugin} from "@capacitor/core";
 
 
@@ -13,7 +13,12 @@ export class BytedanceAdWeb extends WebPlugin implements BytedanceAdPlugin {
     }
 
     // @ts-ignore
-    showSplashAd(options: { slotId: string }): Promise<Result> {
+    showSplashAd(options: SplashAdOptions): Promise<Result> {
+        throw this.unimplemented('Not implemented on web.')
+    }
+
+    // @ts-ignore
+    showRewardVideoAd(options: RewardVideoAdOptions): Promise<Result> {
         throw this.unimplemented('Not implemented on web.')
     }
 }

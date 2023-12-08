@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-bytedance-csj-plugin",
+  "name": "capacitor-bytedance-csj-plugin-ts",
   "version": "0.0.1",
   "description": "A plugin for csj ad",
   "main": "dist/plugin.cjs.js",

@@ -18,7 +18,17 @@ export interface EventResult {
     data?: any;
 }
 
+export type SplashAdOptions = {
+    slotId: string;
+}
+
+export type RewardVideoAdOptions = {
+    slotId: string;
+    extra?: any;
+}
+
 export interface BytedanceAdPlugin extends Plugin {
     init(options: Config): Promise<void>;
-    showSplashAd(options: { slotId: string }): Promise<Result>;
+    showSplashAd(options: SplashAdOptions): Promise<Result>;
+    showRewardVideoAd(options: RewardVideoAdOptions): Promise<Result>;
 }
