@@ -5,22 +5,31 @@ import static org.junit.Assert.*;
 import android.content.Context;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
+
+import com.getcapacitor.JSObject;
+import com.getcapacitor.MessageHandler;
+import com.getcapacitor.PluginCall;
+import com.lmt.bytedancecsj.BytedanceAdPlugin;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import kotlinx.coroutines.channels.ActorKt;
+
 /**
- * Instrumented test, which will execute on an Android device.
+ * Ad test, which will execute on an Android device.
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 @RunWith(AndroidJUnit4.class)
-public class ExampleInstrumentedTest {
+public class AdTest
+{
 
     @Test
     public void useAppContext() throws Exception {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
+        assertEquals("com.getcapacitor.android.test", appContext.getPackageName());
 
-        assertEquals("com.getcapacitor.android", appContext.getPackageName());
     }
 }
