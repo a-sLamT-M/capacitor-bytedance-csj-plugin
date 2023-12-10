@@ -6,6 +6,6 @@ Publish for the specific development team.
 ## Install
 
 ```bash
-npm install bytedance-csj
+npm install capacitor-bytedance-csj-plugin
 npx cap sync
 ```
